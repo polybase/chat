@@ -1,25 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Heading, Container, Text, Stack, Button, Box, Input, InputGroup, InputLeftAddon, HStack, Avatar } from '@chakra-ui/react'
-import { Auth } from '@polybase/auth'
-
-const auth = new Auth()
+import { Heading, Container, Text, Stack, Button, Input, InputGroup, InputLeftAddon, HStack, Avatar } from '@chakra-ui/react'
 
 export function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   const usernames = []
-
-  const login = async () => {
-    const authState = await auth.signIn()
-    console.log(authState)
-  }
-
-  useEffect(() => {
-    auth.onAuthUpdate((authState) => {
-      setIsLoggedIn(!!authState)
-    })
-  }, [])
-
 
   return (
     <Container p={10}>
@@ -52,16 +37,16 @@ export function Home() {
               </Stack>
             </Stack>
           ) : (
-            <Button onClick={login}>Login with Wallet</Button>
+            <Button>Login with Wallet</Button>
           )}
         </Stack>
         {isLoggedIn && (
           <Stack>
             <Heading as='h2' fontSize='2xl'>Logout</Heading>
-            <Button onClick={auth.signIn}>Logout</Button>
+            <Button>Logout</Button>
           </Stack>
         )}
       </Stack >
-    </Container >
+    </Container>
   )
 }
