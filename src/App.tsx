@@ -6,13 +6,15 @@ import {
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 
+import { Home } from './pages/Home'
+
 export const App = () => (
   <ChakraProvider theme={theme}>
     <BrowserRouter>
 
       <Routes>
-        <Route path='/' element={<div>Hello</div>} />
-        <Route path='/world' element={<div>World</div>} />
+        <Route path='/' element={<Home />} />
+        {/* <Route path='/world' element={<>} /> */}
       </Routes>
 
     </BrowserRouter>
