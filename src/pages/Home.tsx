@@ -3,8 +3,17 @@ import { Heading, Container, Text, Stack, Button, Input, InputGroup, InputLeftAd
 
 export function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [publicKey, setPublicKey] = useState<string | null>(null)
+  const [nftId, setNftId] = useState('')
 
-  const usernames = []
+  const nfts: any = []
+
+  const signIn = async () => {
+
+  }
+
+  const createNFT = async () => {
+  }
 
   return (
     <Container p={10}>
@@ -16,28 +25,28 @@ export function Home() {
         <Stack>
           {isLoggedIn ? (
             <Stack >
-              < Heading as='h2' fontSize='2xl'>Usernames</Heading>
-              {usernames.length > 0 ? (
-                <Stack maxW='30em'>
-                  <HStack border='1px solid' borderColor='gray.100' borderRadius='md' p={4}>
-                    <Avatar size='sm' name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
-                    <Heading fontSize='lg'>@user1</Heading>
-                  </HStack>
-                </Stack>
-              ) : (
-                null
-              )}
+              < Heading as='h2' fontSize='2xl'>NFTS</Heading>
+              {nfts?.map(() => {
+                return (
+                  <Stack maxW='30em'>
+                    <HStack border='1px solid' borderColor='gray.100' borderRadius='md' p={4}>
+                      <Avatar size='sm' name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+                      <Heading fontSize='lg'>@id</Heading>
+                    </HStack>
+                  </Stack>
+                )
+              })}
               <Stack>
-                <Heading as='h2' fontSize='md'>Create Username</Heading>
+                <Heading as='h2' fontSize='md'>Mint NFT</Heading>
                 <InputGroup>
                   <InputLeftAddon children='@' />
-                  <Input />
+                  <Input onChange={(e) => setNftId(e.target.value)} />
                 </InputGroup>
-                <Button>Create</Button>
+                <Button onClick={createNFT}>Create</Button>
               </Stack>
             </Stack>
           ) : (
-            <Button>Login with Wallet</Button>
+            <Button onClick={signIn}>Login with Wallet</Button>
           )}
         </Stack>
         {isLoggedIn && (
