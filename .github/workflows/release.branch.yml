@@ -25,11 +25,9 @@ jobs:
         with:
           node-version: 18.x
           cache: 'yarn'
-          cache-dependency-path: ./js/yarn.lock
 
-      - name: Run Lerna version
-        working-directory: ./js
-        run: npx lerna version v$VERSION --no-git-tag-version --force-publish --yes
+      - name: Run version
+        run: yarn version --new-version $VERSION --no-git-tag-version
 
       - name: Commit changes
         run: |
