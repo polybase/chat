@@ -2618,38 +2618,38 @@
   dependencies:
     penpal "^6.2.2"
 
-"@polybase/client@^0.6.3-beta.385":
-  version "0.6.3-beta.385"
-  resolved "https://registry.yarnpkg.com/@polybase/client/-/client-0.6.3-beta.385.tgz#87bd12dc15f6b8fde666c07a9d4793241704c15f"
-  integrity sha512-QiWgCeiC8XflHuKg6px4QcaztaHdXZEQy7ZF/uv4VT8+wtPstX+h52IEQ2Y0sAPmEZutBZg/KDVXrJm0zBxbWw==
+"@polybase/client@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@polybase/client/-/client-0.6.5.tgz#fc18a15fce0453d041e9d6ccecfff0d31e7424db"
+  integrity sha512-WiVtLZZHhSZDrCLxyhX0iyXnUOlA/Exv8iy0epcKwIWsAPZxz5WfJq5+IbU/0UdW8CRocOVskmNUMDSu9Wyk5g==
   dependencies:
-    "@polybase/eth" "^0.6.3-beta.385+8d2c3cb"
+    "@polybase/eth" "^0.6.5"
     "@polybase/polylang" "^0.6.0"
     axios "0.27.2"
 
-"@polybase/eth@^0.6.3-beta.385", "@polybase/eth@^0.6.3-beta.385+8d2c3cb":
-  version "0.6.3-beta.385"
-  resolved "https://registry.yarnpkg.com/@polybase/eth/-/eth-0.6.3-beta.385.tgz#42f2b037b48ec1d2d959dc54c7b2af359f8a4ea2"
-  integrity sha512-tYmolU+7WOPaHTfZVtQXqdptXozam3gNQ4ps1929m0IyzF6pKHd4JZCNsqqfIfaWWOgTDPKLKoYU4nf8sj3OXA==
+"@polybase/eth@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@polybase/eth/-/eth-0.6.5.tgz#4eed7724e20ab2a8daa9a2428bf022ca2ed7b86a"
+  integrity sha512-sXZxoSORujygx4GcpFm/fe0BWO4cZIS7eGD7eygINJ/jT31I001oq3HCIV57+WFYlvMDLIwgQuvF6t/RuvMNFQ==
   dependencies:
     "@ethersproject/keccak256" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
-    "@polybase/util" "^0.6.3-beta.385+8d2c3cb"
+    "@polybase/util" "^0.6.5"
 
 "@polybase/polylang@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@polybase/polylang/-/polylang-0.6.0.tgz#bd8dcb1b6275f9a3e4c9e208be2f7f18da07f955"
   integrity sha512-yk2JbnNkJDKs2Gnjedra7H1b8H7MCZKaOlo3n+OjjcTlqsZq8Iz472hE0umxDi74zxcsMnIb/qsR6oj6fGKrpw==
 
-"@polybase/react@^0.6.3-beta.385":
-  version "0.6.3-beta.385"
-  resolved "https://registry.yarnpkg.com/@polybase/react/-/react-0.6.3-beta.385.tgz#4b66339e5aae1113115f790d6178a09d305e475d"
-  integrity sha512-VOjsQI6Kaz8N18iH4AxvH5HgPwb8g01wICv1+EFOw04InMZEB6DGinFd0xlwZIHoRUE73wH2eJO0i/ltxFIYjQ==
+"@polybase/react@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@polybase/react/-/react-0.6.5.tgz#3847a1d1d9bbdebb1b08eba11d3a03e28ba4d2ff"
+  integrity sha512-GX68ZntAZBatd3Kc6KePHZrwe/5fpc7xeS0ueprsedcN9SZN3WQW+fdWJn6fbHJN6Ld0gGixb9aUpU+Jm3yrPw==
 
-"@polybase/util@^0.6.3-beta.385", "@polybase/util@^0.6.3-beta.385+8d2c3cb":
-  version "0.6.3-beta.385"
-  resolved "https://registry.yarnpkg.com/@polybase/util/-/util-0.6.3-beta.385.tgz#83311c1e4b116193075cc72630ca7839815cb88c"
-  integrity sha512-4JB1dfrsfkTU4HPY6lNmrpanXdGEPH/y884vwVOSKGuqP4H8g9THHAn3YS0QC3P+7T1M0HRXOSDkwJ4xsn9tPg==
+"@polybase/util@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@polybase/util/-/util-0.6.5.tgz#2b5def58327ed2d4c5945cfec4bd9e6d349d4fce"
+  integrity sha512-mpiRwgX1NNbVJYP0GVqafNLgWuAVO4pk/mUQBazW/X+FDz7fq0OSqTnYDZ5xGH87WW+33dX8whditwJIX9YFLA==
   dependencies:
     "@ethersproject/bytes" "^5.7.0"
     "@ethersproject/signing-key" "^5.7.0"
